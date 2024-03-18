@@ -40,5 +40,7 @@ class DynamicArray:
     
 arr = DynamicArray(capacity=4)
 arr.set(1,4)
-arr.popback()
-print("length: ",arr.getSize(), " capacity: ",arr.getCapacity())
+# arr.pushback(4)
+print(arr.popback())
+print(arr.arr)
+
