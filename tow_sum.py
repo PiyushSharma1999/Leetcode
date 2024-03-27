@@ -7,16 +7,14 @@ def twoSum(nums, target):
         :type target: int
         :rtype: List[int]
         """
-        l,r = 0, len(nums)-1
-        while l<r:
-            if nums[l] + nums[r] == target:
-                return [l, r]
-            elif nums[l] + nums[r] > target:
-                r -= 1
+        prev = {}
+        for i, n in enumerate(nums):
+            diff = target - n
+            if diff in prev:
+                return [prev[diff], i]
             else:
-                l += 1
+                prev[n] = i
         return []
 
 print(twoSum(nums, target))
 
-print(nums.index(3))
