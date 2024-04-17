@@ -6,7 +6,7 @@ def dailyTempratures(tempr):
 
     for i, t in enumerate(tempr):
         while stack and t > stack[-1][0]:
-            stackT, stackInd = stack.pop()
+            _, stackInd = stack.pop()
             res[stackInd] = (i - stackInd)
         stack.append([t, i])
     return res
