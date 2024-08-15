@@ -11,10 +11,10 @@ def kokoEatB(piles, h):
         k = (l + r) // 2
         hours = 0
         for p in piles:
-            hours += math.ceil(p / k)
+            hours += math.ceil(float(p) / k)
 
         if hours <= h:
-            res = min(res, k)
+            res = k
             r = k - 1
         else:
             l = k + 1
