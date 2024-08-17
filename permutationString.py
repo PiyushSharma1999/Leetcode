@@ -1,4 +1,4 @@
-s1 = "abc"
+s1 = "abcd"
 s2 = "lecabee"
 
 def findPermutation(s1, s2):
