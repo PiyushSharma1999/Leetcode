@@ -1,4 +1,4 @@
-s = "abcabcbb"
+s = "pwwkew"
 
 def longestSubString(s):
     charset = set()
