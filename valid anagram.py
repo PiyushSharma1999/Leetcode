@@ -12,13 +12,10 @@ def valid_anagrams(s ,t):
             return False
     return True
 
-s,t = "piyush","ijushp"
+s,t = "piyush","iyushp"
 print(valid_anagrams(s,t))
 
-# O(1)
 
-def valid_anagram_o1(s, t):
-    return sorted(s) == sorted(t)
 
     
     

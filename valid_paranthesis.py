@@ -4,15 +4,16 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        p_map ={
-                    "}":"{",
-                    "]":"[",
-                    ")":"("
-                } 
-        stack =[]
+        p_map = {
+            "}" : "{",
+            "]" : "[",
+            ")" : "("
+        }
+        stack = []
+
         for c in s:
             if c in p_map:
-                if stack[-1] == p_map[c]:
+                if stack and stack[-1] == p_map[c]:
                     stack.pop()
                 else:
                     return False
@@ -20,7 +21,7 @@ class Solution(object):
                 stack.append(c)
         return True if not stack else False
 
-s = "()[]{}"
+s = "()"
 
 meth = Solution()
 

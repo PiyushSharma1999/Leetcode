@@ -1,8 +1,8 @@
 prices = [10, 1, 5, 6, 7, 1]
 
-def bestBnSTime(nums):
+def bestBnSTime(prices):
     
-    currMin = nums[0]
+    currMin = prices[0]
     res = 0
 
     for price in prices:
